@@ -21,7 +21,9 @@ tools:layout="@layout/fragment_welcome">
         android:label="InstructionsFragment" >
         <action
             android:id="@+id/action_instructionsFragment_to_showListFragment"
-            app:destination="@id/showListFragment" />
+            app:destination="@id/showListFragment"
+            app:popUpTo="@id/instructionsFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/showListFragment"
