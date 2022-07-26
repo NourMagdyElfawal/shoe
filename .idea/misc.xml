@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/nd940-android-kotlin-course1-starter-master/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/drawable/ic_twotone_account_box_24.xml" value="0.1085" />
+        <entry key="..\:/nd940-android-kotlin-course1-starter-master/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/font/roboto.xml" value="0.20092592592592592" />
+        <entry key="..\:/nd940-android-kotlin-course1-starter-master/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/nd940-android-kotlin-course1-starter-master/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/nd940-android-kotlin-course1-starter-master/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/menu/navdrawer_menu.xml" value="0.203125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

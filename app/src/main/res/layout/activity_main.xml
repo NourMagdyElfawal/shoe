@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- LinearLayout -->
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/myNavHostFragment"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/navigation" />
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/navdrawer_menu" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextTextEmailAddress"-->
+<!--        style="@style/WhiteTextView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginTop="150dp"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:ems="10"-->
+<!--        android:fontFamily="@font/roboto"-->
+<!--        android:hint="@string/email_address"-->
+<!--        android:inputType="textEmailAddress"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextTextPassword"-->
+<!--        style="@style/WhiteTextView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginTop="@dimen/large_margin"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPassword"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/editTextTextEmailAddress" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonLogin"-->
+<!--        style="@style/BlueButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/large_margin"-->
+<!--        android:layout_marginBottom="@dimen/large_margin"-->
+<!--        android:text="@string/login"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/buttonCreate"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonCreate"-->
+<!--        style="@style/BlueButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/create"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />-->
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

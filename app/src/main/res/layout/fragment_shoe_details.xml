@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!-- LinearLayout -->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/large_margin"
+    tools:context=".ShoeDetailsFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/large_margin"
+        android:text="Shoe Details"
+        android:textSize="@dimen/large_text_size" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        style="@style/WhiteTextView"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/editTextCompany"
+        style="@style/WhiteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Company" />
+
+    <EditText
+        android:id="@+id/editTextSize"
+        style="@style/WhiteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="0.0" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        style="@style/WhiteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Description" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/BlueButton"
+            android:layout_margin="@dimen/large_margin"
+            android:text="@android:string/cancel" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/BlueButton"
+            android:layout_margin="@dimen/large_margin"
+            android:text="@string/save" />
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

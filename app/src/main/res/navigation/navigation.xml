@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_root"
+    app:startDestination="@+id/welcomeFragment">
+
+
+<fragment
+android:id="@+id/welcomeFragment"
+android:name="com.udacity.shoestore.welcome.WelcomeFragment"
+android:label="@string/app_name"
+tools:layout="@layout/fragment_welcome">
+    <action
+        android:id="@+id/action_welcomeFragment_to_instructionsFragment"
+        app:destination="@id/instructionsFragment" />
+</fragment>
+    <fragment
+        android:id="@+id/instructionsFragment"
+        android:name="com.udacity.shoestore.instructions.InstructionsFragment"
+        android:label="InstructionsFragment" >
+        <action
+            android:id="@+id/action_instructionsFragment_to_showListFragment"
+            app:destination="@id/showListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showListFragment"
+        android:name="com.udacity.shoestore.shoelist.ShowListFragment"
+        android:label="ShowListFragment" >
+        <action
+            android:id="@+id/action_showListFragment_to_shoeDetailsFragment"
+            app:destination="@id/shoeDetailsFragment" />
+        <argument
+            android:name="shoe"
+            app:argType="com.udacity.shoestore.models.Shoe"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.udacity.shoestore.LoginActivity"
+        android:label="LoginActivity" />
+    <fragment
+        android:id="@+id/shoeDetailsFragment"
+        android:name="com.udacity.shoestore.ShoeDetailsFragment"
+        android:label="ShoeDetailsFragment" >
+        <action
+            android:id="@+id/action_shoeDetailsFragment_to_showListFragment"
+            app:destination="@id/showListFragment"
+            app:popUpTo="@id/showListFragment" />
+
+    </fragment>
+</navigation>
