@@ -43,7 +43,9 @@ class ShoeDetailsFragment : Fragment() {
         }
         binding.buttonSave.setOnClickListener { v: View ->
             viewModel.name = editTextName.text.toString()
-            viewModel.size = editTextSize.text.toString().toDouble()
+            var sizeText=editTextSize.text.toString()
+            if (sizeText.isNotEmpty())
+            viewModel.size = sizeText.toDouble()
             viewModel.company = editTextCompany.text.toString()
             viewModel.description = editTextDescription.text.toString()
 
