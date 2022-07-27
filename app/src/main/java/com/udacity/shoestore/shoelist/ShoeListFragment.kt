@@ -91,7 +91,13 @@ class ShowListFragment : Fragment() {
 
 
         val args = ShowListFragmentArgs.fromBundle(requireArguments())
-        Log.i("shoe", args.shoe.toString())
+        Log.i("shoeList", args.shoe.toString())
+        val newShoe=args.shoe
+        if (newShoe != null) {
+            shoeList.add(newShoe)
+            recycleViewAdapter.notifyDataSetChanged()
+
+        }
 
 
         setHasOptionsMenu(true)
