@@ -23,5 +23,9 @@
     <string name="details">Details</string>
     <string name="save">SAVE</string>
     <string name="cancel">CANCEL</string>
+    <string name="shoe">shoe</string>
+    <string name="company">Company</string>
+    <string name="size">224.8</string>
+    <string name="description">Description</string>
 
 </resources>
