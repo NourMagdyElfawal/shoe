@@ -6,7 +6,21 @@
 
     <!-- ConstraintLayout -->
 
+<data>
+    <variable
+        name="shoe"
+        type="com.udacity.shoestore.models.Shoe" />
+    <variable
+        name="shoe1"
+        type="com.udacity.shoestore.models.Shoe" />
+    <variable
+        name="shoe2"
+        type="com.udacity.shoestore.models.Shoe" />
+    <variable
+        name="shoe3"
+        type="com.udacity.shoestore.models.Shoe" />
 
+</data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -77,7 +91,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:ems="10"
-                        android:text="@string/shoe" />
+                        android:text="@={shoe.name}" />
 
                     <TextView
                         android:id="@+id/textCompany1"
@@ -86,7 +100,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:ems="10"
-                        android:text="@string/company" />
+                        android:text="@={shoe.company}" />
 
                     <TextView
                         android:id="@+id/textSize1"
@@ -95,7 +109,8 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:ems="10"
-                        android:text="@string/size" />
+                        android:text='@{String.format("%.1f", shoe.size)}'
+                    />
 
                     <TextView
                         android:id="@+id/textDescription1"
@@ -104,7 +119,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:ems="10"
-                        android:text="@string/description" />
+                        android:text="@={shoe.description}" />
 
                 </LinearLayout>
 
@@ -150,7 +165,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:ems="10"
-                        android:text="@string/shoe" />
+                        android:text="@={shoe1.name}" />
 
                     <TextView
                         android:id="@+id/textCompany2"
@@ -159,7 +174,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:ems="10"
-                        android:text="@string/company" />
+                        android:text="@={shoe1.company}" />
 
                     <TextView
                         android:id="@+id/textSize2"
@@ -168,7 +183,8 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:ems="10"
-                        android:text="@string/size" />
+                        android:text='@{String.format("%.1f", shoe1.size)}'
+                        />
 
                     <TextView
                         android:id="@+id/textDescription2"
@@ -177,7 +193,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:ems="10"
-                        android:text="@string/description" />
+                        android:text="@={shoe1.description}" />
 
                 </LinearLayout>
 
@@ -223,7 +239,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:ems="10"
-                        android:text="@string/shoe" />
+                        android:text="@={shoe2.name}" />
 
                     <TextView
                         android:id="@+id/textCompany3"
@@ -232,7 +248,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:ems="10"
-                        android:text="@string/company" />
+                        android:text="@={shoe2.company}" />
 
                     <TextView
                         android:id="@+id/textSize3"
@@ -241,7 +257,8 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:ems="10"
-                        android:text="@string/size" />
+                        android:text='@{String.format("%.1f", shoe2.size)}'
+                        />
 
                     <TextView
                         android:id="@+id/textDescription3"
@@ -250,7 +267,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:ems="10"
-                        android:text="@string/description" />
+                        android:text="@={shoe2.description}" />
 
                 </LinearLayout>
 
@@ -297,7 +314,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:ems="10"
-                        android:text="@string/shoe" />
+                        android:text="@={shoe3.name}" />
 
                     <TextView
                         android:id="@+id/textCompany4"
@@ -306,7 +323,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:ems="10"
-                        android:text="@string/company" />
+                        android:text="@={shoe3.company}" />
 
                     <TextView
                         android:id="@+id/textSize4"
@@ -315,7 +332,8 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:ems="10"
-                        android:text="@string/size" />
+                        android:text='@{String.format("%.1f", shoe3.size)}'
+                        />
 
                     <TextView
                         android:id="@+id/textDescription4"
@@ -324,7 +342,8 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:ems="10"
-                        android:text="@string/description" />
+                        android:text="@={shoe3.description}"
+                        />
 
                 </LinearLayout>
 

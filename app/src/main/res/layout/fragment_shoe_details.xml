@@ -5,7 +5,16 @@
 
     <!-- LinearLayout -->
 
-<LinearLayout
+
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.udacity.shoestore.MainActivityViewModel" />
+    </data>
+
+
+    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -24,6 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:text="@={viewModel.shoeName}"
         style="@style/WhiteTextView"
         android:inputType="textPersonName"
         android:hint="Name" />
@@ -34,6 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:text="@={viewModel.shoeCompany}"
         android:inputType="textPersonName"
         android:hint="Company" />
 
@@ -42,6 +53,7 @@
         style="@style/WhiteTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@={viewModel.shoeSize}"
         android:ems="10"
         android:inputType="numberDecimal"
         android:hint="0.0" />
@@ -51,6 +63,7 @@
         style="@style/WhiteTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@={viewModel.shoeDescription}"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Description" />

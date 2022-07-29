@@ -15,8 +15,10 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import com.example.shoestore.shoelist.ShoeListViewModel
+import com.udacity.shoestore.MainActivityViewModel
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
+import com.udacity.shoestore.models.Shoe
 import kotlinx.android.synthetic.main.fragment_instructions.*
 
 
@@ -31,18 +33,13 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class ShowListFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
     private lateinit var viewModel: ShoeListViewModel
+    private lateinit var mainViewModel: MainActivityViewModel
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
     }
 
     override fun onCreateView(
@@ -50,13 +47,23 @@ class ShowListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         Log.i("ShoeListViewModel","ViewModelProvider")
+
         viewModel = ViewModelProvider(this).get(ShoeListViewModel::class.java)
+        mainViewModel = ViewModelProvider(this).get(MainActivityViewModel::class.java)
+
         // Inflate the layout for this fragment
         val binding: FragmentShoeListBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_shoe_list, container, false)
         binding.fab.setOnClickListener { v: View ->
             v.findNavController().navigate(ShowListFragmentDirections.actionShowListFragmentToShoeDetailsFragment())
         }
+
+        binding.shoe = mainViewModel.shoe
+        binding.shoe1 = mainViewModel.shoe1
+        binding.shoe2 = mainViewModel.shoe2
+        binding.shoe3 = mainViewModel.shoe3
+
+
 
         val args = ShowListFragmentArgs.fromBundle(requireArguments())
         Log.i("shoe", args.shoe.toString())

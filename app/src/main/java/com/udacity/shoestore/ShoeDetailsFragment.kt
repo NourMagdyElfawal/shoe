@@ -22,6 +22,7 @@ class ShoeDetailsFragment : Fragment() {
     }
 
     private lateinit var viewModel: ShoeDetailsViewModel
+    private lateinit var viewModelMain: MainActivityViewModel
 
 
 
@@ -34,6 +35,12 @@ class ShoeDetailsFragment : Fragment() {
         )
 //        val shoeModel = Shoe()
 //        searchHomeModel.word = jsonObject1.getString("word")
+
+        viewModelMain = ViewModelProvider(this).get(MainActivityViewModel::class.java)
+        binding.viewModel = viewModelMain
+        binding.lifecycleOwner = this
+
+
         Log.i("ShoeDetailsViewModel","ViewModelProvider")
         viewModel = ViewModelProvider(this).get(ShoeDetailsViewModel::class.java)
 

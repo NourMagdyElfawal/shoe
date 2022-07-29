@@ -12,6 +12,8 @@ class ShoeDetailsViewModel : ViewModel() {
 
     init {
         Log.i("ShoeDetailsViewModel","ShoeListViewModel Created")
+
+
     }
 
     override fun onCleared() {
