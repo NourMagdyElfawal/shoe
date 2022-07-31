@@ -1,23 +1,43 @@
 package com.udacity.shoestore
 
+import android.util.Log
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.udacity.shoestore.models.Shoe
 
-class MainActivityViewModel:ViewModel() {
-    val shoeName = MutableLiveData<String>()
-    val shoeCompany = MutableLiveData<String>()
-    val shoeSize = MutableLiveData<String>()
-    val shoeDescription = MutableLiveData<String>()
-//    val shoe=MutableLiveData<Shoe>()
-    // Instance of Shoe data class.
-     val shoe: Shoe = Shoe("shoeName",40.0,"shoeCompany","shoeDescription")
-     val shoe1: Shoe = Shoe("shoeName1",30.0,"shoeCompany1","shoeDescription1")
-     val shoe2: Shoe = Shoe("shoeName2",37.0,"shoeCompany2","shoeDescription2")
-     val shoe3: Shoe = Shoe("shoeName3",38.0,"shoeCompany3","shoeDescription3")
+class MainActivityViewModel: ViewModel() {
 
+
+    var shoe: MutableLiveData<Shoe>
+
+    private val _shoeList = MutableLiveData<MutableList<Shoe>>()
+    val shoeList: LiveData<MutableList<Shoe>>
+        get() = _shoeList
+
+    private val _isShoeAdded = MutableLiveData<Boolean>()
+    val isShoeAdded: LiveData<Boolean>
+        get() = _isShoeAdded
     init {
-
+    // initiate shoeAdded flag
+    _isShoeAdded.value = false
+    // and shoeList
+    _shoeList.value = ArrayList()
+        // make the shoe model empty value
+        shoe = MutableLiveData<Shoe>(Shoe("", 0.0, "", "", mutableListOf()))
     }
-
+// we call this function when we click saveButton at shoe details fragment
+    fun addShoe(shoe: Shoe) {
+        //return the current value and add new shoe
+        _shoeList.value?.add(shoe)
+        //make the flag true
+        _isShoeAdded.value = true
+    }
+// this fun after we add the new value
+    fun onAddShoe() {
+    //make  the flag false
+        _isShoeAdded.value = false
+    //set  the shoe constructor empty to avoid duplicate
+        shoe.value = Shoe("", 0.0, "", "", mutableListOf())
+    }
 }

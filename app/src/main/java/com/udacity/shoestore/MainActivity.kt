@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         intent = Intent(applicationContext, LoginActivity::class.java)
-        intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY)
 
         when (item.itemId){
             R.id.loginActivity ->

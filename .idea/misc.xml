@@ -3,16 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/nd940-android-kotlin-course1-starter-master/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/drawable/ic_divider_background.xml" value="0.2055" />
         <entry key="..\:/nd940-android-kotlin-course1-starter-master/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/drawable/ic_twotone_account_box_24.xml" value="0.1085" />
         <entry key="..\:/nd940-android-kotlin-course1-starter-master/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/font/roboto.xml" value="0.20092592592592592" />
         <entry key="..\:/nd940-android-kotlin-course1-starter-master/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/nd940-android-kotlin-course1-starter-master/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/nd940-android-kotlin-course1-starter-master/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/fragment_instructions.xml" value="0.1" />
         <entry key="..\:/nd940-android-kotlin-course1-starter-master/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/fragment_shoe_details.xml" value="0.1" />
-        <entry key="..\:/nd940-android-kotlin-course1-starter-master/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/fragment_shoe_list.xml" value="0.153125" />
+        <entry key="..\:/nd940-android-kotlin-course1-starter-master/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/fragment_shoe_list.xml" value="0.1" />
         <entry key="..\:/nd940-android-kotlin-course1-starter-master/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/fragment_welcome.xml" value="0.20416666666666666" />
         <entry key="..\:/nd940-android-kotlin-course1-starter-master/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/nav_header.xml" value="0.1" />
         <entry key="..\:/nd940-android-kotlin-course1-starter-master/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/single_item.xml" value="0.18" />
+        <entry key="..\:/nd940-android-kotlin-course1-starter-master/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/layout/single_shoe.xml" value="0.1" />
         <entry key="..\:/nd940-android-kotlin-course1-starter-master/nd940-android-kotlin-course1-starter-master/starter/app/src/main/res/menu/navdrawer_menu.xml" value="0.203125" />
       </map>
     </option>
